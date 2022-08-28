@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <ul>
+            <li>HOPU 厚溥·IT</li>
+            <li>首页</li>
+            <li>新闻</li>
+            <li>合作伙伴</li>
+            <li>解决方案</li>
+            <li>社会责任</li>
+            <li>联系方式</li>
+            <li>简/繁/EN</li>
+        </ul>
+        <!-- banner部分 -->
+        <div class="cont_banner" onmouseover="bindCursor()" onmouseleave="bindLeave()">
+            <div class="activeClass">111</div>
+            <div>222</div>
+            <div>333</div>
+        </div>
+    </div>
+</body>
+<style>
+    .container{
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 100%;
+        height: auto;
+    }    
+    .container ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        list-style-type: none;
+        text-align: center;
+        margin: auto;
+        background-color: gray;
+    }
+    .container ul li{
+        cursor: pointer;
+        width: 12.5%;
+    }
+    .container ul li:hover{
+        background-color: blue;
+        color: white;
+    }
+    .cont_banner{
+        position: relative;
+        width: 100%;
+    }
+    .cont_banner > div{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        font-size: 24px;
+        display: none;
+    }
+    .activeClass{
+        display: block !important;
+    }
+</style>
+<script src="./firstIndex.js"></script>
+</html>
